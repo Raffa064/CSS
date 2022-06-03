@@ -1,0 +1,66 @@
+.gamer-button {
+    width: 150px;
+    height: 60px;
+    position: relative;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    color: #fff;
+    box-shadow: 0px 0px 7px #aaaaaaa0, inset 0px 30px 0px #aaaaaa20;
+    border: #aaa solid 1px;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.gamer-button::before {
+    content: '';
+    width: 10px;
+    height: 5px;
+    position: absolute;
+    top: -7.5px;
+    left: 20px;
+    background: transparent;
+    box-shadow: 0px 0px 7px #aaaaaaa0;
+    border: #aaa solid 1px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    transition: 0.2s;
+}
+
+.gamer-button::after {
+    content: '';
+    width: 10px;
+    height: 5px;
+    position: absolute;
+    bottom: -7.5px;
+    right: 20px;
+    background: transparent;
+    box-shadow: 0px 0px 7px #aaaaaaa0;
+    border: #aaa solid 1px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    transition: 0.2s;
+}
+
+.gamer-button:hover:active {
+    width: 160px;
+    letter-spacing: 0.2em;
+    color: #71A7EC;
+    border-color: #0ff;
+    box-shadow: 0px 0px 7px #aaffffa0, inset 0px 35px 0px #aaffff20;
+}
+
+.gamer-button:hover:active::before {
+    background: #08f;
+    border-color: #0ff;
+    box-shadow: 0px 0px 7px #08f, 0px 0px 10px #0ff;
+    left: calc(100% - 40px);
+}
+
+.gamer-button:hover:active::after {
+    background: #08f;
+    border-color: #0ff;
+    box-shadow: 0px 0px 7px #08f, 0px 0px 10px #0ff;
+    right: calc(100% - 40px);
+}

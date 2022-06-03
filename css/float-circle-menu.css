@@ -1,0 +1,43 @@
+.float-circle-menu {
+    width: 50px;
+    height: 50px;
+    position: relative;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background: #fff;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.float-circle-menu > span {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    border-radius: 50%;
+    background: #fff;
+    color: #000;
+    padding: 10px;
+    transform-origin: center;
+    transform: rotate(calc(45deg * var(--i))) translateY(80px) rotate(calc(-45deg * var(--i)));
+    transition: 0.3s;
+}
+
+.float-circle-menu:hover {
+    background: #f00;
+    color: #fff;
+}
+
+.float-circle-menu:hover > span {
+    display: initial;
+}
+
+.float-circle-menu:hover > span:active {
+    background: #08f;
+    color: #fff;
+}

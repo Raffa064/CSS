@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/gamer-button.css">
+    <link rel="stylesheet" href="./css/lp001.css">
+    <link rel="stylesheet" href="./css/float-circle-menu.css">
+    <title>CSS</title>
+</head>
+
+<body>
+    <div class="elements">
+        <button --show="0" class="gamer-button">play</button>
+        <div --show="0" class="landing-page-container lp001">
+            <div>
+                <h1>Lorem ipsum</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet tincidunt velit. Nulla tempus, libero id fringilla condimentum, mi est interdum lacus, fermentum dignissim eros libero eget tortor. Donec dui turpis, blandit sed iaculis et, cursus at sem. Sed non purus ut erat volutpat egestas. Praesent tincidunt maximus blandit. Ut feugiat eget magna eu porttitor. Praesent posuere sapien nec dictum scelerisque. Donec non lectus pretium, gravida enim vitae, luctus velit. Proin a tortor euismod, elementum urna non, faucibus nulla</p>
+            </div>
+            <main>
+                <section>
+                    <h1>Lorem lorem ip summs</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet tincidunt velit. Nulla tempus, libero id fringilla condimentum, mi est interdum lacus, fermentum dignissim eros libero eget tortor. Donec dui turpis, blandit sed iaculis et, cursus at sem. Sed non purus ut erat volutpat egestas. Praesent tincidunt maximus blandit. Ut feugiat eget magna eu porttitor. Praesent posuere sapien nec dictum scelerisque. Donec non lectus pretium, gravida enim vitae, luctus velit. Proin a tortor euismod, elementum urna non, faucibus nulla</p>
+                </section>
+                <a name="bottom"></a>
+            </main>
+            <a class="go-bottom-link" href="#bottom">
+                <ion-icon name="chevron-down-circle-outline"></ion-icon>
+            </a>
+        </div>
+        <div --show="0">
+            <div class="float-circle-menu">
+
+                <ion-icon name="add-outline"></ion-icon>
+                <span style="--i: 1;">
+                    <ion-icon name="mail-outline"></ion-icon>
+                </span>
+                <span style="--i: 2;">
+                    <ion-icon name="settings-outline"></ion-icon>
+                </span>
+                <span style="--i: 3;">
+                    <ion-icon name="play-outline"></ion-icon>
+                </span>
+                <span style="--i: 4;">
+                    <ion-icon name="folder-outline"></ion-icon>
+                </span>
+                <span style="--i: 5;">
+                    <ion-icon name="open-outline"></ion-icon>
+                </span>
+                <span style="--i: 6;">
+                    <ion-icon name="remove-outline"></ion-icon>
+                </span>
+                <span style="--i: 7;">
+                    <ion-icon name="trash-outline"></ion-icon>
+                </span>
+                <span style="--i: 8;">
+                    <ion-icon name="search-outline"></ion-icon>
+                </span>
+            </div>
+        </div>
+    </div>
+    <button class="prev-next" style="--pos: 0;" onclick="select(-1)">&lt;</button>
+    <button class="prev-next" style="--pos: 1;" onclick="select(1)">&gt;</button>
+    <script>
+        var elementList = document.querySelectorAll('div.elements > *')
+        var current = elementList.length - 1
+        select(0)
+
+        function select(direction) {
+            current += direction
+            current %= elementList.length
+            if (current < 0) current = elementList.length - 1
+            elementList.forEach(function(item) {
+                item.attributes['--show'].value = 0
+            })
+            elementList[current].attributes['--show'].value = 1
+        }
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg .com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
