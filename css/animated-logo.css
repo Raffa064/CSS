@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+.animated-logo {
+    display: inline;
+    position: relative;
+    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+    animation: animate1 1s;
+}
+
+.animated-logo:before {
+    content: '';
+    width: calc(50% + 5px);
+    height: calc(100% + 5px);
+    position: absolute;
+    left: -2.5px;
+    top: -2.5px;
+    background-color: #08f;
+    z-index: -1;
+    animation: animate2 1.6s;
+}
+
+@keyframes animate1 {
+    0%, 100% {
+        letter-spacing: 0px;
+        text-shadow: 0px 0px 0px #fff, 0px 0px 0px #0ff, 0px 0px 0px #08f;
+    }
+    80% {
+        letter-spacing: 2px;
+        text-shadow: 0px 0px 12.5px #fff, 0px 0px 25px #0ff, 0px 0px 50px #08f;
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        width: 0px;
+        height: 0px;
+    }
+    30% {
+        height: calc(100% + 5px);
+    }
+    80% {
+        width: 75%;
+    }
+    100% {
+        width: calc(50% + 5px);
+    }
+}

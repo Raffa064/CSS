@@ -41,6 +41,6 @@ body {
     min-height: 100vh;
 }
 
-*[--show='0'], [--show='0'] > * {
+[--show='0'] {
     display: none;
 }
