@@ -1,4 +1,4 @@
-[logo](./img/logo.jpg)
+![logo](/img/logo.jpg)
 
 # CSS tests
 This project is an collection of CSS tests that I made while learn CSS.
