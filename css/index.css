@@ -30,9 +30,10 @@ body {
     border: #aaa solid 3px;
     border-radius: 50%;
     opacity: 10%;
+    transition: 0.2s;
 }
 
-.prev-next:hover {
+.prev-next:active {
     opacity: 100%;
 }
 
