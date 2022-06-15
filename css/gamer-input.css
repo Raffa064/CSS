@@ -31,15 +31,19 @@
     transition: 0.5s;
 }
 
-.gamer-input:focus::after {
-    color: #fff;
-    text-shadow: 0px 0px 3px #fff, 0px 0px 4px #0ff, 0px 0px 6px #08f;
-}
-
 .gamer-input:focus {
     background: #0088FF05;
     outline: none;
     text-shadow: 0px 0px 3px #fff, 0px 0px 4px #0ff, 0px 0px 6px #08f;
     border-color: #fff;
     box-shadow: 0px 0px 3px #fff, 0px 0px 4px #0ff, 0px 0px 6px #08f, inset 0px 0px 3px #fff, inset 0px 0px 4px #0ff, inset 0px 0px 6px #08f;
+}
+
+.gamer-input:focus::after {
+    color: #fff;
+    text-shadow: 0px 0px 3px #fff, 0px 0px 4px #0ff, 0px 0px 6px #08f;
+}
+
+.gamer-input:active::after {
+    letter-spacing: 0.05em;
 }
