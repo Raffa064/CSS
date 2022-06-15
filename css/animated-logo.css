@@ -7,7 +7,6 @@
     font-family: 'Orbitron', sans-serif;
     animation: animate1 1s;
 }
-
 .animated-logo:before {
     content: '';
     width: calc(50% + 5px);
