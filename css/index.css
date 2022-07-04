@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -44,4 +46,14 @@ body {
 
 [--show='0'] {
     display: none;
+}
+
+.css-repo-logo {
+    margin: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    font-size: 0.6em;
+    font-family: 'Orbitron', sans-serif;
 }
