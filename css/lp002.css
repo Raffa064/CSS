@@ -27,6 +27,7 @@
     backdrop-filter: blur(7px);
     border: 0.5px solid rgba(255, 255, 255, 0.243);
     border-radius: 10px;
+    box-shadow: -2px 2px 4px #00000036;
 }
 
 .login-card h1 {
