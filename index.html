@@ -141,6 +141,10 @@
     <button class="prev-next" style="--pos: 0;" onclick="select(-1)">&lt;</button>
     <button class="prev-next" style="--pos: 1;" onclick="select(1)">&gt;</button>
     <script>
+        if (window.localStorage.firstOpen != 2) {
+            window.location.replace('first-open.html')
+        }
+        
         var elementList = document.querySelectorAll('div.elements > *')
         var current = elementList.length - 1
         select(0)

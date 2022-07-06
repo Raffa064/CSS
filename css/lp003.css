@@ -18,7 +18,7 @@
 
 .lp003 h1 {
     display: inline;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: var(--page-title);
 }
 
@@ -130,5 +130,5 @@
 
 .lp003 main h1 {
     color: #000;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }

@@ -1,0 +1,36 @@
+p {
+    text-indent: 6px;
+    margin-top: 10px;
+}
+
+.example-box {
+    max-width: 800px;
+    padding: 10px;
+    margin-block: 10px;
+    margin-inline: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #eeeeee;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+}
+
+main button {
+    width: calc(100vw - 60px);
+    height: 40px;
+    display: block;
+    margin: auto;
+    color: #fff;
+    background: #08f;
+    text-transform: uppercase;
+    text-align: center;
+    border: none;
+    border-radius: 40px;
+    transition: 0.2s;
+}
+
+main .large-goto-button:active {
+    width: calc(100vw - 30px);
+    background: #047;
+}

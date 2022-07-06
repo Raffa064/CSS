@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/lp003.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/first-open.css">
+    <title>Document</title>
+</head>
+<body style="--bg: linear-gradient(to bottom, #0088ff, #0074a7);">
+    <div class="lp003 landing-page-container">
+        <header>
+            <h1>CSS Repo</h1>
+            <input type="checkbox" name="checkbox" id="checkbox">
+            <label for="checkbox"><span></span></label>
+            <nav>
+                <ul>
+                    <li><a href="https://github.com/Raffa064/CSS">Codigo fonte</a></li>
+                    <li><a href="https://github.com/Raffa064">Meu perfil do github</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Wellcome!</h1>
+            <p>My name is Rafael, and this site is my HTML and CSS tests repository.</p>
+            <p>You can view all tests clicking on arrow buttons to view previous and next test:</p>
+            <div class="example-box">
+                <button class="prev-next" style="--pos: 0; position: static; opacity: 100%; transform: none;" onclick="select(-1)">&lt;</button>
+                <button class="prev-next" style="--pos: 1; position: static; opacity: 100%; transform: none;" onclick="select(1)">&gt;</button>
+            </div>
+            <button class="large-goto-button" onclick="goToTests()">Go to tests</button>
+        </main>
+    </div>
+    <script>
+        function goToTests() {
+            window.localStorage.firstOpen = 2
+            window.location.replace('index.html')
+        }
+    </script>
+</body>
+</html>
