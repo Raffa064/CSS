@@ -83,12 +83,14 @@
     top: var(--header-size);
     left: 0rem;
     background: var(--bg2);
+    opacity: 50%;
     transition: 0.4s;
     z-index: 1;
 }
 
 .lp003 input:checked+label+nav {
     height: calc(100vh - var(--header-size));
+    opacity: 100%;
 }
 
 .lp003 nav ul {
