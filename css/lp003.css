@@ -1,0 +1,131 @@
+:root {
+    --bg: #08f;
+    --bg2: #2b2b2b;
+    --menu-option-separator: #50505050;
+    --page-title: #fff;
+    --header-size: 3.5rem;
+}
+
+.lp003 header {
+    height: var(--header-size);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    ;
+    justify-content: space-between;
+    background: var(--bg);
+}
+
+.lp003 h1 {
+    display: inline;
+    font-size: 1rem;
+    color: var(--page-title);
+}
+
+.lp003 header input {
+    display: none;
+}
+
+.lp003 label {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.lp003 label span {
+    width: 1.25rem;
+    height: 0.125rem;
+    background: #fff;
+    color: transparent;
+    font-size: 0px;
+    transition: 0.2s;
+}
+
+.lp003 label span::before,
+.lp003 label span::after {
+    content: ' ';
+    display: block;
+    width: 1.25rem;
+    height: 0.125rem;
+    background: #fff;
+    transform: translateY(0rem);
+    transition: 0.2s;
+}
+
+.lp003 label span::before {
+    transform: translateY(-0.375rem);
+}
+
+.lp003 label span::after {
+    transform: translateY(0.250rem);
+}
+
+
+.lp003 input:checked+label span {
+    background-color: transparent;
+}
+
+.lp003 input:checked+label span::before {
+    transform: rotateZ(-45deg);
+    transform-origin: 50% calc(50% + 0.250rem);
+}
+
+.lp003 input:checked+label span::after {
+    transform: rotateZ(45deg);
+    transform-origin: 50% calc(50% - 0.250rem);
+}
+
+.lp003 nav {
+    width: 100vw;
+    height: 0;
+    overflow-y: hidden;
+    position: absolute;
+    top: var(--header-size);
+    left: 0rem;
+    background: var(--bg2);
+    transition: 0.4s;
+    z-index: 1;
+}
+
+.lp003 input:checked+label+nav {
+    height: calc(100vh - var(--header-size));
+}
+
+.lp003 nav ul {
+    padding: 10px;
+    list-style: none;
+}
+
+.lp003 li > a {
+    display: block;
+    width: calc(100vw - 20px);
+    padding: 10px;
+    text-decoration: none;
+    color: #aaa;
+    border-bottom: 1px solid var(--menu-option-separator);
+    letter-spacing: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    opacity: 70%;
+    transition: 0.7s;
+}
+
+.lp003 li > a:active {
+    background-color: rgba(158, 155, 155, 0.325);
+}
+
+.lp003 input:checked+label+nav a {
+    letter-spacing: normal;
+    opacity: 100%;
+}
+
+.lp003 main {
+    padding: 10px;
+    background: white;;
+    color: black;
+}
+
+.lp003 main h1 {
+    color: #000;
+    font-size: 0.9rem;
+}
