@@ -122,8 +122,9 @@
 }
 
 .lp003 main {
+    height: calc(100vh - var(--header-size));
     padding: 10px;
-    background: white;;
+    background: white;
     color: black;
 }
 
